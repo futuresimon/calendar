@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+  <title>Calendar App</title>
+  <link rel="stylesheet" type="text/css" href="calendar.css" />
+</head>
+
+<body>
+<div class="header">
+  Simple Calendar
+</div>
+<div class="log_in_and_sign_up_field">
+  <table>
+    <tr>
+      <td><input type="text" id="username" placeholder="Username" /></td>
+      <td><input type="password" id="password" placeholder="Password" /></td>
+      <td><button id="login_btn">Log In</button></td>
+      <td><button id="logout_btn">Log Out</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" id="signup_username" placeholder="Username" /></td>
+      <td><input type="password" id="signup_password" placeholder="Password" /></td>
+      <td><input type="password" id="confirm_signup_password" placeholder="Confirm Password"/></td>
+      <td><button id="signup_btn">Sign Up</button></td>
+    </tr>
+  </table>
+</div>
+<br/>
+<br/>
+
+<div class="user" id = "user"></div>
+<div class="month_and_year" id = "month_and_year"></div>
+<div class="calendar" id = "calendar"></div>
+<div class="switch_month_btns">
+<br>
+<button id="prev_month_btn">Previous Month</button>
+<button id="next_month_btn">Next Month</button>
+</div>
+<br>
+<br>
+<div class="create_event_field">
+  <table>
+    <tr>
+      <td>Name</td>
+      <td>Month</td>
+      <td>Day</td>
+      <td>Year</td>
+      <td>Hour</td>
+      <td>Minute</td>
+      <td>Priority</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input type="text" id="event_name" placeholder="Event Name" /></td>
+      <td><select id="month"></select></td>
+      <td><select id="day"></select></td>
+      <td><select id="year"></select></td>
+      <td><select id="hour"></select> :</td>
+      <td><select id="minute"></select></td>
+      <td><select id="priority">
+        <option value="high">high</option>
+        <option value="medium">medium</option>
+        <option value="low">low</option>
+      </select></td>
+      <td><button id="create_event_btn">Create Event</button></td>
+    </tr>
+  </table>
+</div>
+<br>
+<br>
+
+<div class="event_header">Upcoming Events</div>
+<div class="events" id = "events">Log In To See Upcoming Events!</div>
+<div class = "create_event_field">
+  <table>
+    <tr>
+      <td><input type="text" id="edit_event_name" placeholder="Edit Event Name" /></td>
+      <td><select id="edit_month"></select>
+        <select id="edit_day"></select>
+        <select id="edit_year"></select>
+        <select id="edit_hour"></select> :
+        <select id="edit_minute"></select>
+      </td>
+      <td><button id="edit_event_btn">Edit Selected Event</button></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td><button id="delete_event_btn">Delete Selected Event</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" id="share_event_user" placeholder="User to Share With" /></td>
+      <td></td>
+      <td><button id="share_event_btn">Share Selected Event With User</button></td>
+    </tr>
+  </table>
+</div>
+
+<input type="hidden" id="token" value = ""/>
+<script type="text/javascript" src="ajax.js"></script> <!-- load the JavaScript file -->
+
+</body>
+</html>
