@@ -1,5 +1,0 @@
-calendar to do:
-	set time to a drop down menu
-	pass in tokens
-	make sure innerHTML stuff is being escaped
-	creative portions
